@@ -411,6 +411,7 @@ function StoreFLT(force)
             UpdateBlips()
 
             RemovePallet()
+            Player.Delivered = 0 -- Reset to deliveries, avoid infinite money
         else
             ESX.ShowNotification('~r~You need to return your FLT to get paid!')
         end
